@@ -98,6 +98,7 @@
 ## Настройка на локален AI модел (Ollama)
 
 За напълно локален/поверителен RAG пайплайн се препоръчва използването на Ollama.
+Можете да разгледате и пълното ръководство за [настройка на локални модели](docs/local_model.md).
 
 1. Изтеглете и инсталирайте [Ollama](https://ollama.com/download) за Windows.
 2. Отворете нов терминал и изтеглете нужните модели:
@@ -118,9 +119,9 @@
 (OCR, парсване на таблици, извличане на фигури)
 
 Налични са следните опции:
-- Azure Document Intelligence (API)
-- Adobe PDF Extract (API)
-- **Docling** (локален, с отворен код)
+- [Azure Document Intelligence (API)](https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence)
+- [Adobe PDF Extract (API)](https://developer.adobe.com/document-services/apis/pdf-extract/)
+- [**Docling** (локален, с отворен код)](https://github.com/DS4SD/docling)
 
 За да използвате Docling, първо инсталирайте необходимите зависимости в конзолата: 
 `pip install docling`
@@ -133,9 +134,9 @@
 ## Настройка на GraphRAG
 
 За по-сложно индексиране с графи от знание (Knowledge Graphs):
-- **Nano GraphRAG**: Препоръчва се за повечето потребители заради лесната интеграция.
-- **LightRAG**
-- **MS GraphRAG**
+- [**Nano GraphRAG**](https://github.com/gusye1234/nano-graphrag): Препоръчва се за повечето потребители заради лесната интеграция.
+- [**LightRAG**](https://github.com/HKUDS/LightRAG)
+- [**MS GraphRAG**](https://github.com/microsoft/graphrag)
 
 ---
 
@@ -152,11 +153,11 @@
 ## Добавяне на ваш собствен RAG пайплайн
 
 ### Персонализиран пайплайн за разсъждение (Reasoning Pipeline)
-Можете да направите бърза корекция на начина, по който работи QA пайплайнът по подразбиране.
+Разгледайте имплементацията на пайплайна по подразбиране [тук](libs/ktem/ktem/reasoning/simple.py). Можете да направите бърза корекция на начина, по който работи QA пайплайнът по подразбиране.
 Добавете нова `.py` имплементация в `libs/ktem/ktem/reasoning/` и след това я включете във `flowsettings.py`, за да я активирате в потребителския интерфейс.
 
 ### Персонализиран пайплайн за индексиране (Indexing Pipeline)
-Разгледайте примерната имплементация в `libs/ktem/ktem/index/file/graph`. 
+Разгледайте примерната имплементация в [`libs/ktem/ktem/index/file/graph`](libs/ktem/ktem/index/file/graph). 
 
 ---
 <p align="center">Създадено с 💻 и ☕ за Windows общността!</p>
