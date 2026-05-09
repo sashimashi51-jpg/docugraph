@@ -13,7 +13,7 @@ git init
 git config user.name "sashimashi51-jpg"
 git config user.email "sashimashi51-jpg@users.noreply.github.com"
 
-git add pyproject.toml README.md scripts/ push_to_github.bat
+git add pyproject.toml README.md scripts/
 git commit -m "Project setup and initial configuration" >nul 2>&1
 
 git add libs/docugraph/
