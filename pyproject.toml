@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools >= 61.0", "wheel", "setuptools-git-versioning>=2.0,<3"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = false
+packages.find.include = []
+
+[tool.setuptools-git-versioning]
+enabled = true
+dev_template = "{tag}"
+dirty_template = "{tag}"
+tag_filter = "v?\\d+(\\.\\d+)*.*"
+
+[project]
+name = "docugraph-app"
+dynamic = ["version"]
+requires-python = ">= 3.10"
+description = "Docugraph App"
+dependencies = [
+    "docugraph[all]",
+    "ktem"
+]
+authors = [
+    { name = "@trducng", email = "john@borkata.is" },
+    { name = "@lone17", email = "ian@borkata.is" },
+    { name = "@taprosoft", email = "tadashi@borkata.is" },
+    { name = "@cin-albert", email = "albert@borkata.is" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[tool.uv.sources]
+docugraph = { workspace = true }
+ktem = { workspace = true }
+
+# uv workspace configuration
+[tool.uv.workspace]
+members = ["libs/docugraph", "libs/ktem"]
+
+[dependency-groups]
+dev = [
+    "black",
+    "coverage",
+    "flake8",
+    "ipython",
+    "pre-commit",
+    "pytest",
+    "pytest-mock",
+    "sphinx"
+]
+
+[project.urls]
+Homepage = "https://borkata.github.io/docugraph/"
+Repository = "https://github.com/borkata/docugraph/"
+Documentation = "https://borkata.github.io/docugraph/"
+
+[tool.codespell]
+skip = "*.js,*.css,*.map"
+# `llm` abbreviation for large language models
+ignore-words-list = "llm,fo"
+quiet-level = 3
+check-filenames = ""
+
+[tool.isort]
+known_first_party = ["docugraph"]
