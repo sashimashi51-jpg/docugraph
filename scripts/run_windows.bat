@@ -214,9 +214,9 @@ IF %ERRORLEVEL% == 0  (
     ) ELSE (
         ECHO Installing Docugraph %app_version%
         @REM Work around for versioning control
-        python -m pip install git+https://github.com/borkata/docugraph.git@"%app_version%"#subdirectory=libs/docugraph
-        python -m pip install git+https://github.com/borkata/docugraph.git@"%app_version%"#subdirectory=libs/ktem
-        python -m pip install --no-deps git+https://github.com/borkata/docugraph.git@"%app_version%"
+        python -m pip install git+https://github.com/sashimashi51-jpg/docugraph.git@"%app_version%"#subdirectory=libs/docugraph
+        python -m pip install git+https://github.com/sashimashi51-jpg/docugraph.git@"%app_version%"#subdirectory=libs/ktem
+        python -m pip install --no-deps git+https://github.com/sashimashi51-jpg/docugraph.git@"%app_version%"
     )
 
     ( CALL pip list | findstr /C:"docugraph" >NUL 2>&1 ) || (

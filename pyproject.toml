@@ -22,10 +22,10 @@ dependencies = [
     "ktem"
 ]
 authors = [
-    { name = "@trducng", email = "john@borkata.is" },
-    { name = "@lone17", email = "ian@borkata.is" },
-    { name = "@taprosoft", email = "tadashi@borkata.is" },
-    { name = "@cin-albert", email = "albert@borkata.is" },
+    { name = "@trducng", email = "john@sashimashi51-jpg.is" },
+    { name = "@lone17", email = "ian@sashimashi51-jpg.is" },
+    { name = "@taprosoft", email = "tadashi@sashimashi51-jpg.is" },
+    { name = "@cin-albert", email = "albert@sashimashi51-jpg.is" },
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -53,9 +53,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://borkata.github.io/docugraph/"
-Repository = "https://github.com/borkata/docugraph/"
-Documentation = "https://borkata.github.io/docugraph/"
+Homepage = "https://sashimashi51-jpg.github.io/docugraph/"
+Repository = "https://github.com/sashimashi51-jpg/docugraph/"
+Documentation = "https://sashimashi51-jpg.github.io/docugraph/"
 
 [tool.codespell]
 skip = "*.js,*.css,*.map"

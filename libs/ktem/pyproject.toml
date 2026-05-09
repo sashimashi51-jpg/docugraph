@@ -34,10 +34,10 @@ dependencies = [
     "mcp>=1.0.0",
 ]
 authors = [
-    { name = "@trducng", email = "john@borkata.is" },
-    { name = "@lone17", email = "ian@borkata.is" },
-    { name = "@taprosoft", email = "tadashi@borkata.is" },
-    { name = "@cin-albert", email = "albert@borkata.is" },
+    { name = "@trducng", email = "john@sashimashi51-jpg.is" },
+    { name = "@lone17", email = "ian@sashimashi51-jpg.is" },
+    { name = "@taprosoft", email = "tadashi@sashimashi51-jpg.is" },
+    { name = "@cin-albert", email = "albert@sashimashi51-jpg.is" },
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
